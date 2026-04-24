@@ -3,12 +3,12 @@
   <div class="container largeCardDisplay">
     <h4 class="header">{{ cardsInfo?.title }}</h4>
     <p class="snippet">{{ cardsInfo?.subtitle }}</p>
-    <LargeCard :cards="cardsInfo.cards" :cardsWithSlider="cardsWithSlider" />
+    <LargeCard :cards="cardsInfo?.cards" :cardsWithSlider="cardsWithSlider" />
     <div v-show="cardsWithSlider" class="see-all-link">
       <NuxtLink
-        :to="`/${cardsInfo.stateName}`"
+        :to="`/${cardsInfo?.stateName}`"
         :class="$store.state.darkMode ? 'see-all dark' : 'see-all'"
-        >Посмотреть все {{ cardsInfo.title }}</NuxtLink
+        >Посмотреть все {{ cardsInfo?.title }}</NuxtLink
       >
     </div>
   </div>
