@@ -27,7 +27,7 @@ export default {
 
   target: 'static',
   router: {
-    base: '/', // Correct base URL for the root of the custom domain
+    base: '/FloridaGifts/',
   },
 
   css: ['./assets/main.scss'],
